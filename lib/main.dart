@@ -16,7 +16,7 @@ void main() {
           20,
           (i) => Todo(
             'Todo $i',
-            'A description of what needs to be done for Todo $i',
+            'Alguna descripcion que se necesita para Todo $i',
           ),
         ),
       ),
@@ -65,7 +65,6 @@ class DetailScreen extends StatelessWidget {
   Widget build(BuildContext context) {
     final todo = ModalRoute.of(context)!.settings.arguments as Todo;
 
-    // Use the Todo to create the UI.
     return Scaffold(
       appBar: AppBar(
         title: Text(todo.title),
